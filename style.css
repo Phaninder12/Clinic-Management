@@ -16,7 +16,7 @@ section {
   background: white;
   margin: 1rem auto;
   padding: 1rem 2rem;
-  max-width: 600px;
+  max-width: 900px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
@@ -71,6 +71,45 @@ button:hover {
   background: #95a5a6;
 }
 
+.delete-btn {
+  background: #e74c3c;
+}
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+.bill-btn {
+  background: #f39c12;
+}
+.bill-btn:hover {
+  background: #d35400;
+}
+
+.presc-btn {
+  background: #8e44ad;
+}
+.presc-btn:hover {
+  background: #5e3370;
+}
+
+.action-type-btn {
+  background: #6c3483;
+}
+.action-type-btn:hover {
+  background: #512e5f;
+}
+
+.action-type-input {
+  width: 100px;
+  margin-left: 4px;
+}
+
+.action-type-list {
+  margin-top: 4px;
+  color: #6c3483;
+  font-size: 0.96em;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -88,14 +127,31 @@ th {
   background: #ecf0f1;
 }
 
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+#loginForm {
+  max-width: 350px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
 @media (max-width: 700px) {
   section {
     padding: 1rem;
   }
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th, td {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
-.action-buttons {
-  display: flex;
-  gap: 8px;  /* Space between the buttons */
-  justify-content: flex-end; /* Optional: aligns buttons to the right */
-}
