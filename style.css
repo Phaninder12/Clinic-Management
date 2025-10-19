@@ -1,0 +1,101 @@
+/* Basic styling for the Clinic Management System */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+
+header {
+  background: #3498db;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+section {
+  background: white;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+input,
+select,
+button {
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.action-btn {
+  margin: 0 4px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+
+.edit-btn {
+  background: #27ae60;
+}
+
+.edit-btn:hover {
+  background: #1e8449;
+}
+
+.cancel-btn {
+  background: #95a5a6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background: #ecf0f1;
+}
+
+@media (max-width: 700px) {
+  section {
+    padding: 1rem;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;  /* Space between the buttons */
+  justify-content: flex-end; /* Optional: aligns buttons to the right */
+}
